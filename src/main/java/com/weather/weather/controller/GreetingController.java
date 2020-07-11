@@ -46,6 +46,9 @@ public class GreetingController {
         this.restTemplate = restTemplateBuilder.build();
     }
 
+    String weatherKey = "";
+    String weatherURL = "";
+
     @GetMapping("/condition")
     public String condition(Model model) {
 
